@@ -3,6 +3,9 @@
 
 name: cicd_ci
 
+pool:
+  vmImage: 'ubuntu-20.04'
+
 trigger:
   branches:
     include:
@@ -14,7 +17,7 @@ stages:
   - job:
     displayName: yamllint_checks
     pool:
-      vmImage: 'ubuntu-latest'
+      vmImage: 'ubuntu-20.04	'
     steps:
     - script: |
         npm install 
