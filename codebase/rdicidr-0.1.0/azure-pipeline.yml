@@ -6,7 +6,7 @@ name: cicd_ci
 trigger:
   branches:
     include:
-      - master
+      - main
 
 stages:
 - stage: CI_Checks
